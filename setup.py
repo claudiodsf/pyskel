@@ -9,10 +9,10 @@ with open('README.md', 'rb') as f:
 
 setup(
     name='pyskel',
-    packages=['pyskel', 'pyskel.scripts'],
+    packages=['pyskel', 'pyskel.scripts', 'pyskel.configobj'],
     include_package_data=True,
     entry_points={
-        'console_scripts': ['my_script = pyskel.scripts.my_script:main']
+        'console_scripts': ['pyskel = pyskel.scripts.pyskel:main']
         },
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),

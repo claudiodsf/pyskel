@@ -4,3 +4,4 @@ include LICENSE.txt
 include CONTRIBUTORS.txt
 include versioneer.py
 include pyskel/_version.py
+include pyskel/configspec.conf
