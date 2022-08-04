@@ -47,6 +47,7 @@ def write_sample_config(configspec, progname):
     c.defaults = []
     c.initial_comment = configspec.initial_comment
     c.comments = configspec.comments
+    c.final_comment = configspec.final_comment
     configfile = progname + '.conf'
     if write_ok(configfile):
         with open(configfile, 'wb') as fp:
