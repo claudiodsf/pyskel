@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf8 -*-
+# SPDX-License-Identifier: GPL-3.0-or-later
 """
 Main script for pyskel.
 
 :copyright:
     2021 Author Name <author@email.com>
 :license:
-    CeCILL Free Software License Agreement, Version 2.1
-    (http://www.cecill.info/index.en.html)
+    GNU General Public License v3.0 or later
+    (https://www.gnu.org/licenses/gpl-3.0-standalone.html)
 """
 import sys
 import argparse
