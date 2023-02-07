@@ -13,3 +13,6 @@ Features:
    (embedded);
  - Configuration file support via
    [configobj](https://github.com/DiffSK/configobj) (embedded).
+
+Use the provided script `set_package_and_author.py` to change the name of the
+package, and the author's name and email.
