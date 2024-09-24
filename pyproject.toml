@@ -27,7 +27,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Physics",
 ]
 requires-python = ">3.7"
-dependencies = []
+dependencies = ["six"]
 
 [project.license]
 text = "GNU General Public License v3 or later (GPLv3+)"
