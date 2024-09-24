@@ -2,5 +2,3 @@ include CHANGELOG.md
 include README.md
 include LICENSE.txt
 include CONTRIBUTORS.txt
-include pyskel/_version.py
-include pyskel/conf/configspec.conf

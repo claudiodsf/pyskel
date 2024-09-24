@@ -47,6 +47,7 @@ packages = [
     "pyskel",
     "pyskel.scripts",
     "pyskel.configobj",
+    "pyskel.conf",
 ]
 include-package-data = true
 platforms = [
