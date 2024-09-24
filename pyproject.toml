@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=64", "versioneer[toml]"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyskel"
+dynamic = ["version"]
+authors = [
+    { name = "Author Name", email = "author@email.com" },
+]
+description = "A short description"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+requires-python = ">3.7"
+dependencies = []
+
+[project.license]
+text = "GNU General Public License v3 or later (GPLv3+)"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "http://mypage.com"
+
+[project.scripts]
+pyskel = "pyskel.scripts.pyskel:main"
+
+[tool.setuptools]
+packages = [
+    "pyskel",
+    "pyskel.scripts",
+    "pyskel.configobj",
+]
+include-package-data = true
+platforms = [
+    "OS",
+    "Independent",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "pyskel.__version__"}
+
+[tool.versioneer]
+VCS = "git"
+style = "pep440"
+versionfile_source = "pyskel/_version.py"
+versionfile_build = "pyskel/_version.py"
+tag_prefix = "v"
+parentdir_prefix = "pyskel-"
