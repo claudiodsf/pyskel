@@ -43,17 +43,23 @@ Homepage = "http://mypage.com"
 pyskel = "pyskel.scripts.pyskel:main"
 
 [tool.setuptools]
-packages = [
-    "pyskel",
-    "pyskel.scripts",
-    "pyskel.configobj",
-    "pyskel.conf",
-]
 include-package-data = true
 platforms = [
     "OS",
     "Independent",
 ]
+
+[tool.setuptools.packages.find]
+include = [
+    "pyskel",
+    "pyskel.scripts",
+    "pyskel.configobj",
+    "pyskel.conf",
+]
+
+[tool.setuptools.package-data]
+"*" = ["LICENSE"]
+"pyskel.conf" = ["*.conf"]
 
 [tool.setuptools.dynamic]
 version = {attr = "pyskel.__version__"}
