@@ -56,6 +56,11 @@ def main():
         content = content.replace(b"author@email.com", author_email.encode())
         with open(filename, "wb") as f:
             f.write(content)
+    # rename the script file
+    os.rename(
+        os.path.join("pyskel", "scripts", "pyskel.py"),
+        os.path.join("pyskel", "scripts", package_name + ".py")
+    )
     # replace the directory named "pyskel" with package_name
     os.rename("pyskel", package_name)
     # Print a message to the user
