@@ -39,8 +39,8 @@ def write_ok(filepath):
     """
     if os.path.exists(filepath):
         ans = input(
-            f'"{filepath}" already exists. '
-            'Do you want to overwrite it? [y/N] ')
+            f'"{filepath}" already exists. Do you want to overwrite it? [y/N] '
+        )
         return ans in ['y', 'Y']
     return True
 
